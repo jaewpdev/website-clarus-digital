@@ -5,7 +5,7 @@ import { Button } from '../components/Button';
 
 function HeroSection() {
   return (
-    <section className="md:mt-[200px] flex flex-col items-center justify-between relative lg:gap-12">
+    <section className="md:mt-[200px] flex flex-col-reverse  md:flex-col items-center justify-between relative lg:gap-12">
       <div className="flex flex-col items-center">
         <h1 className="text-6xl sm:text-7xl xl:text-9xl font-medium text-center">
           Uncover Your <br /> Growth Potential
@@ -18,13 +18,15 @@ function HeroSection() {
         </p>
 
         <div className="flex gap-4 flex-wrap">
-          <Button to="/contact">Contact Us</Button>
-          <Button to="/schedule-discovery-call" variant="secondary">
+          <Button to="/contact" fullWidth>
+            Contact Us
+          </Button>
+          <Button to="/schedule-discovery-call" variant="secondary" fullWidth>
             Request Discovery Call
           </Button>
         </div>
       </div>
-      <ImgSparks className="max-w-[350px] lg:max-w-[500px]" />
+      <ImgSparks className="max-h-[150px]  md:max-h-[350px] lg:max-h-[500px]" />
     </section>
   );
 }
