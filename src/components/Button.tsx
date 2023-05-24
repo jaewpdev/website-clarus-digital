@@ -20,7 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
     className,
     {
       'bg-black hover:bg-brand-blue': variant === 'primary',
-      'bg-gray-500 border-gray-600 hover:bg-gray-600': variant === 'secondary',
+      'bg-brand-blue hover:bg-black': variant === 'secondary',
     }
   );
 
