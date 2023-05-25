@@ -11,7 +11,15 @@ const router = createBrowserRouter([
   {
     element: <Root />,
     errorElement: <Error />,
-    children: [{ path: '/', element: <Home /> }],
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/blog', element: <div className="">Blog</div> },
+      { path: '/contact', element: <div className="">Contacts</div> },
+      {
+        path: '/request-discovery-call',
+        element: <div className="">Request Discovery Call</div>,
+      },
+    ],
   },
 ]);
 

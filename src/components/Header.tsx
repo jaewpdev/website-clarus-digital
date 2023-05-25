@@ -16,7 +16,7 @@ interface INavItem {
 }
 const navItems: INavItem[] = [
   { text: 'Home', href: '/' },
-  { text: 'About', href: '/about' },
+  // { text: 'About', href: '/about' },
   { text: 'Contact', href: '/contact' },
   { text: 'Blog', href: '/blog' },
 ];
